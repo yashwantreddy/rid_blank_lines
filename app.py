@@ -1,12 +1,10 @@
 import streamlit as st
+import io
 
 def remove_blank_lines(text):
     """Remove blank lines from the text."""
     non_empty_lines = [line for line in text.splitlines() if line.strip() != ""]
     return "\n".join(non_empty_lines)
-
-import streamlit as st
-import io
 
 def rearrange_string(input_string):
     lines = input_string.strip().split('\n')
